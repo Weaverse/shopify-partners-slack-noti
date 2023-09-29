@@ -1,0 +1,21 @@
+{
+  "name": "shopify-partners-slack-noti",
+  "version": "1.0.0",
+  "description": "A Cloudflare worker to send notifications to Slack for Shopify Partner events.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "author": "Weaverse",
+  "license": "MIT",
+  "dependencies": {
+    "serverless-cloudflare-workers": "^1.2.0"
+  },
+  "devDependencies": {
+    "miniflare": "^3.20230922.0",
+    "wrangler": "^3.10.1"
+  }
+}
