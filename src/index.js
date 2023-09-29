@@ -306,4 +306,10 @@ export default {
     console.log("env", env);
     ctx.waitUntil(requestShopifyPartnerCheck());
   },
+  async fetch(request, env, ctx) {
+    initializeEnvVariables(env); // Initialize environment variables with env
+    console.log("env", env);
+    ctx.waitUntil(requestShopifyPartnerCheck());
+    return new Response("OK");
+  },
 };
