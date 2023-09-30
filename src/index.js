@@ -227,7 +227,7 @@ const constructSlackMessage = (event) => {
     Occurred at: ${new Date(node.occurredAt).toLocaleString("vi-VN", {
       timeZone: "Asia/Ho_Chi_Minh",
     })}
-    [Partner Link](${partnerLink})
+    <${partnerLink}| Partner Link >
 ${chargeAmount ? `Charge Amount: ${chargeCurrency}${chargeAmount}` : ""}
 ${chargeName ? `Charge Name: ${chargeName}` : ""}
 ${chargeId ? `Charge ID: ${chargeId}` : ""}
